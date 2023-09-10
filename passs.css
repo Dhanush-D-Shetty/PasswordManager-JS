@@ -1,0 +1,134 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    background-color:#2D033B;
+    height: 10vh;
+    
+}
+nav>li{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 30px;
+    font-weight: bolder;
+    font-size: 1.7rem;
+    color:white;
+
+}
+nav ul{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 20px 30px;
+    font: size 1.5rem;
+}
+nav ul li{
+    cursor: pointer;
+    list-style-type: none;
+    padding: 0 15px;
+    color:white;
+    transition: 0.5s ;
+}
+nav ul li:hover{
+   font-size: 1.2rem;
+}
+
+.container{
+    width: 80vw; min-height: 70vh;
+    margin: 10px auto;
+    padding: 20px 50px;
+    background-color: #2D033B;
+    color: white;
+    border-radius: 10px;
+}
+hr{
+    margin-top: 50px;
+}
+
+.container table{
+    margin: 20px 0;
+   
+  }
+table,tr,td,th{
+    border-collapse: collapse;
+    border: 2px solid whitesmoke;
+    padding: 5px 20px;
+}
+
+.container h2{
+    margin-top: 20px;
+}
+
+.container form{
+    margin: 20px 0;
+}
+
+input{
+    border: 0.4px white solid;
+    background-color: #2D033B;
+    padding: 0 40px;
+    color: aliceblue;
+    border-radius: 5px;
+    height: 25px;
+    width: 350px;
+}
+
+
+.container form div button{
+    border: 0.4px solid white;
+    background-color: #2D033B;
+    width: 200px;
+    height: 30px;
+    color: white;
+    padding: 2px 0px;
+    margin: 0 0px;
+    cursor: pointer;
+    transition: 0.5s ease-out;
+}
+
+.container form div button:hover{
+    border: 0.1px solid whitesmoke;
+    background-color:#3d1b63;
+   
+    color:whitesmoke;
+    border-radius: 10px;
+
+}
+.deletebtn{
+    color: white;
+    background-color: #2D033B;
+    padding: 5px 10px;
+}
+
+
+@media  screen and  (max-width: 600px)  {
+
+    nav{
+        display: flex;
+        flex-direction: column;  
+        background-color:#2D033B;
+        height: 10vh;
+        width: 100vw;
+    }
+    input{
+        padding: 0;
+        color: aliceblue;
+        border-radius: 2px;
+        width: 75vw;
+        
+    }
+    table,tr,th,td{
+       width: 90vw;
+       font-size: 1rem;
+    }
+    .container{
+        width: 100vw;
+    }
+    
+}
+
